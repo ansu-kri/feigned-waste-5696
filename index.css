@@ -1,0 +1,124 @@
+#main{
+    width: 1519.2px;
+    height: 40px;
+    /* border: 1px solid red; */
+    background-color: #DAD8D9;
+}
+#main>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main>ul>a{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    /* border-top: 3px solid #FF0303; */
+}
+#heading{
+    display: flex;
+    width: 1519.2px;
+    height: 100px;
+    background-color: #e2e2e2;
+    /* border: 1px solid red; */
+}
+.logo>span{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.logo>img:nth-child(3){
+    margin-top: 10px;
+    width: 70px;
+}
+.logo>img:nth-child(4){
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    width: 50px;
+}
+.header>img{
+    width: 400px;
+    height: 50px;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+nav{
+    display: flex;
+    width: 1519.2px;
+    height: 43px;
+    position: relative;
+    background-color: #000000;
+    /* border: 1px solid red; */
+}
+#menu-btn{
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    margin-top: 8px;
+    /* border: 1px solid blue; */
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 990px;
+    height: 35px;
+    /* border: 1px solid blue; */
+    margin: auto;
+   margin-left: 370px;
+}
+#navbar>div>a{
+    font-size: 14px;
+    font-weight: 700px;
+    text-decoration: none solid rgb(255,255,255);
+    /* outline: rgb(255,0,0) dashed 1px; */
+    color: #FFFFFF;
+}
+#search{
+    width: 36px;
+    height: 44px;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 8px;
+    /* border: 1px solid blue; */
+}
+#slider {
+    height: 100vh;
+    width: 0px;
+    margin-top: 0;
+    background-color: #e2e2e2;
+    max-width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0px;
+    right: 0px;
+}
+#close>img {
+    width: 20px;
+}
+#sli1{
+    display: grid;
+    width: 70%;
+    height: 700px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    /* border: 1px solid blue; */
+    margin: auto;
+}
+.sli2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+/* .sli2>div{
+    border: 1px solid red;
+} */
+.sli3{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+/* .sli3>div{
+    border: 1px solid green;
+} */
