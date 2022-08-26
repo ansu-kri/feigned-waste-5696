@@ -8,7 +8,7 @@ let imagesLink=[
 let leftBtn=document.getElementById("left-btn");
 let rightBtn=document.getElementById("right-btn");
 let crauser=document.getElementById("crauser");
-// let search=document.getElementById("search");
+let search=document.getElementById("search");
 
 let imageState=0;
 rightBtn.addEventListener("click",function(){
@@ -26,3 +26,27 @@ leftBtn.addEventListener("click",function(){
     }
     crauser.src=imagesLink[imageState];
 })
+
+// slid SharedWorker
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
