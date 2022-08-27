@@ -42,19 +42,11 @@
     margin-left: 450px;
     margin-top: 20px;
 }
-<<<<<<< HEAD
 #nav{
     display: flex;
     width: 1519.2px;
     height: 43px;
     /* position: fixed; */
-=======
-nav{
-    display: flex;
-    width: 1519.2px;
-    height: 43px;
-    position: relative;
->>>>>>> main
     background-color: #000000;
     /* border: 1px solid red; */
 }
@@ -69,20 +61,12 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-<<<<<<< HEAD
     /* position: fixed; */
-=======
-    position: fixed;
->>>>>>> main
     width: 990px;
     height: 35px;
     /* border: 1px solid blue; */
     margin: auto;
-<<<<<<< HEAD
    margin-left: 227px;
-=======
-   margin-left: 370px;
->>>>>>> main
 }
 #navbar>div>a{
     font-size: 14px;
@@ -95,11 +79,7 @@ nav{
     width: 36px;
     height: 44px;
     cursor: pointer;
-<<<<<<< HEAD
     margin-left: 190px;
-=======
-    margin-left: 300px;
->>>>>>> main
     margin-top: 8px;
     /* border: 1px solid blue; */
 }
@@ -588,11 +568,10 @@ h4,h5{
     /* border: 1px solid red; */
     margin: auto;
     margin-top: 100px;
-}.audio2>div>img{
+}
+.audio2>div>img{
     width: 10%;
     border: 1px solid grey;
     border-radius: 50%;
 }
-=======
-} */
->>>>>>> main
+
