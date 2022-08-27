@@ -48,7 +48,7 @@
                     <a href="#">Education</a>
                 </div>
                 <div>
-                    <a href="#">Cities</a>
+                    <a href="./audio.html">Audio</a>
                 </div>
                 <div>
                     <a href="./movie.html">Entertainment</a>
@@ -56,11 +56,11 @@
                 <div>
                     <a href="#">Politics</a>
                 </div>
-                <div>
-                    <a href="#">Sports</a>
-                </div>
                 <div id="nav1">
-                    <a href="#">Sign in</a>
+                    <a href="./login.html">Sign in</a>
+                </div>
+                <div>
+                    <a href="./signup.html">Sign up</a>
                 </div>
             </div>
         </div>
@@ -473,6 +473,18 @@
         slider.style.width = "0%"
         slider.style.display = "none"
     })
+
+    let signinLS = JSON.parse(localStorage.getItem("signin"));
+    let nav = document.getElementById("nav1");
+    if (signinLS != null) {
+        nav.innerHTML = null;
+        let username = document.createElement("a");
+        username.innerText = signinLS.name;
+        username.style.color = "white";
+        nav.append(username);
+
+    }
+
 
 </script>
 </html>

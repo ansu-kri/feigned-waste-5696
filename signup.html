@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        /* div{
+            width: 100%;
+            height: 40px;
+            border: 1px solid red;
+            text-align: center;
+            margin: auto;
+        } */
+        div>img{
+            margin-left: 587px;
+            width: 260px;
+        }
+        * {
+            background-color: aliceblue;
+        }
+        #box {
+            width: 30%;
+            border: 1px solid white;
+            margin: auto;
+            margin-top: 40px;
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            padding-bottom: 20px;
+        }
+
+        form {
+            width: 90%;
+            margin: auto;
+            background-color: white;
+        }
+
+        #box>form>input {
+            width: 90%;
+            margin-bottom: 20px;
+
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        /* #country {
+            width: 96%;
+            padding: 10px;
+            background-color: white;
+            margin-bottom: 15px;
+        } */
+
+        #check {
+            background-color: white;
+            margin-top: 15px;
+        }
+
+        #sub {
+
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: black;
+            cursor: pointer;
+            color: white;
+        }
+
+        #box>form>p {
+            font-size: 12px;
+            background-color: white;
+        }
+
+        #bottom {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+
+        #bottom>p {
+            background-color: white;
+        }
+
+        a {
+            color: #3C86ff;
+            background-color: white;
+        }
+
+        .in {
+            background-color: white;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(201, 120, 133);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/indian-express-logo-n.svg" alt="">
+    </div>
+    <div id="box">
+        <h2>Sign Up</h2>
+        <form id="form">
+            <input class="in" id="name" type="Name" placeholder="Full Name*" />
+            <input class="in" id="email" type="email" placeholder="Email Address*" />
+            <input class="in" id="password" type="password" placeholder="create password*" />
+            <div id="check">
+                <input type="checkbox">
+                <label for="">Remember Me</label>
+            </div>
+            <input type="submit" value="CREATE AN ACCOUNT" id="sub">
+            <p>By clicking "Create an Account", you agree to our Terms of Use and Privacy Policy, including the Use of
+                Cookies and the transfer of your personal information to the United States, a jurisdiction that may not
+                provide an equivalent level of data protection to the laws in your home country</p>
+        </form>
+        <div id="bottom">
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </div>
+    </div>
+</body>
+<script>
+    let form=document.querySelector("form");
+    let signupLS=JSON.parse(localStorage.getItem("signup")) || [];
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        let obj={
+            name:form.name.value,
+            email:form.email.value,
+            password:form.password.value,
+        }
+        if(obj.name =="" || obj.email=="" || obj.password==""){
+            alert("Please fill entire data");
+            return;
+        }
+        //console.log(obj);
+        signupLS.push(obj);
+        localStorage.setItem("signup",JSON.stringify(signupLS));
+        alert("signup sucessfully");
+        window,location.href="login.html";
+    })
+</script>
+</html>

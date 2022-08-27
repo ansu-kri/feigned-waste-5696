@@ -70,7 +70,7 @@ let crypto_data = [
     },
     {
         
-        name: "Delhi Crime Season 2 review: Shefali Shah’s show is solid, smart and thought-provoking Delhi Crime Season 2 review: In its second iteration, the show is just as effective as season 1. In a couple of respects, it is even better.",
+        name: "Shefali Shah’s show is solid, smart and thought-provoking Delhi Crime Season 2 review: In its second iteration,.",
         
         img: "https://images.indianexpress.com/2022/08/Delhi-Crime-2-review.jpg?resize=600,334",
     },
